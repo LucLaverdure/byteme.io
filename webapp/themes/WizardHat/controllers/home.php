@@ -63,7 +63,6 @@ class search_radio_can extends Controller {
 		$ch = curl_init();
 		curl_setopt($ch, CURLOPT_URL, "$url");
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-		//curl_setopt($ch, CURLOPT_HTTPHEADER, array("Authorization: token  27a0b9a81f075cc991d8488bfa380b66d6405ec7"));
 		curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/4.0 (compatible; MSIE 5.01; Windows NT 5.0)"); 
 		curl_setopt($ch, CURLOPT_AUTOREFERER, true);
 		curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
