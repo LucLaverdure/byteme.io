@@ -1,0 +1,292 @@
+/* CSS Reset
+http:/meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+/* Main */
+.right {
+		float:right;
+}
+.left {
+		float:left;
+}
+body {
+	background: none repeat scroll 0% 0% rgba(22, 22, 22, 0.94);
+}
+body, a, p, b, strong, div, h1,h2,h3,h4,h5, input {
+	font-family: 'PT Sans', sans-serif;
+	font-size:20px;
+	line-height:25px;
+}
+.wrapper {
+	background: none repeat scroll 0% 0% rgba(42, 42, 42, 0.94);
+}
+.sub-wrapper {
+	max-width:1024px;
+	width:100%;
+	margin:0 auto;
+	box-sizing:border-box;
+	padding:50px 0
+}
+h1, h1 a, h1 a:hover, h1 a:focus {
+	color: #fff;
+	text-decoration:none;
+	font-size:42px;
+}
+body h1 span{
+	color: #ccc;
+	font-size:25px;
+}
+h2 {
+	color: #cca876;
+}
+.nav {
+	margin-top:30px;
+}
+.nav li {
+	float:left;
+	margin-right:20px;
+}
+.nav li a {
+	float:left;
+	color: #cca876;
+	text-decoration:none;
+	font-size:20px;
+	text-transform:uppercase;
+}
+.nav li a:hover {
+	text-decoration:underline;
+}
+.main-bg {
+	background: transparent url(/theme/files/img/bg.jpg) no-repeat center center;
+}
+.main-bg a, .main-bg p, .main-bg div, .main-bg h2 {
+	color: #fff;
+
+}
+.people-bg {
+	background: transparent url(/theme/files/img/ppl-bg.jpg) repeat-y center center;
+}
+input[type=text] {
+	color: #555;
+	width:100%;
+	font-size:20px;
+	padding: 5px 10px;
+	box-sizing:border-box;
+}
+.box h2 {
+	padding:10px;
+}
+.box .ppl, .box .job {
+	text-align:left;
+	display:inline-block;
+	margin-right:10px;
+	margin-bottom:20px;
+}
+body ul#tags {
+	background: none;
+	border:4px solid #c5c5c5;
+	width:100%;
+	box-sizing:border-box;
+}
+body .ui-widget-content {
+	color:#fff;
+}
+#search-button {
+	background: #fff;
+	color: rgba(22, 22, 22, 0.94);
+	text-align:right;
+	padding:10px;
+	font-size:30px;
+	display:inline-block;
+	margin:50px 0 100px;
+	float:right;
+	border: 3px solid rgba(79, 67, 51);
+}
+#search-button:hover {
+	background: rgba(79, 67, 51);
+	border: 3px solid rgba(22, 22, 22, 0.94);
+	color:#fff;
+	cursor:pointer;
+}
+.se {
+	color:#cca876;
+	font-size:bold;
+}
+
+#s-trail span.word {
+	color: #00ff00;
+	position:absolute;
+}
+
+#s-trail, #r-trail {
+	background:#000;
+	margin:0 auto;
+	overflow:hidden;
+	height:50px;
+	width:100%;
+}
+.photo {
+	max-width:100%;
+	width:240px;
+	height:auto;
+}
+.people .main-info {
+	float:left;
+}
+.people h1 {
+	font-size:42px;
+	line-height:60px;
+	color: #fff;
+}
+.people h2 {
+	font-size:30px;
+	line-height:50px;
+	color: #fff;
+	margin:0;
+	padding:0;
+}
+.people h3 {
+	font-size:25px;
+	line-height:40px;
+	color: #fff;
+}
+.people p, .people div {
+	font-size:22px;
+	line-height:30px;
+	color: #fff;
+}
+.people a {
+	font-size:22px;
+	line-height:30px;
+	color: #fff;
+	text-decoration:none;
+}
+.people a:hover {
+	text-decoration:underline;
+}
+.people .watch {
+	background: #fff;
+	border-radius: 15px;
+	line-height:80px;
+	height:60px;
+	border:2px solid #ccc;
+	display:inline-block;
+	color: #ff0000;
+	padding:0 50px 0 15px;
+	margin-top:70px;
+	margin-bottom:70px;
+}
+
+.fblogin {
+	margin-top:30px;
+}
+.email-to {
+	margin-top:20px;
+}
+.request-info h1 {
+	font-size:25px;
+	line-height:40px;
+}
+.bg {
+	min-height:500px;
+}
+.bg.people-bg {
+	min-height:400px;
+}
+.watch span, .watch img {
+	float:left;
+	display:inline-block;
+}
+.watch span {
+	max-width:150px;
+	margin-top:-10px;
+	margin-left:15px;
+}
+.likes {
+	padding:0 20px;
+}
+.likes h2{
+	margin: 20px 0 0 0;
+}
+.likes span {
+	text-spacing:3px;
+	color:#ddd;
+}
+.logged_in {
+	padding:25px;
+	box-sizing:border-box;
+}

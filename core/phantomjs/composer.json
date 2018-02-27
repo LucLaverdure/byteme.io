@@ -1,0 +1,16 @@
+{
+        "require": {
+            "jonnyw/php-phantomjs": "4.6.0"
+        },
+        "config": {
+            "bin-dir": "/kunden/homepages/0/d220355082/htdocs/bitme/core/phantomjs/bin"
+        },
+        "scripts": {
+            "post-install-cmd": [
+                "PhantomInstaller\\Installer::installPhantomJS"
+            ],
+            "post-update-cmd": [
+                "PhantomInstaller\\Installer::installPhantomJS"
+            ]
+        }
+}
